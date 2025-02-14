@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--The lang attriibute sets the language for the website-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!--UTF-8 supports most characters and symbols-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Set the viewport to ensure the page is responsive on mobile devices and adjusts the scale-->
+    <title>Document</title><!--This is the title that would show up in the tab-->
+</head>
+<body>
+<body style="font-family:courier;">
+    <form action="submit_form.php" method="POST" target="_blank">
+        <!--for and id need to match-->
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" placeholder="Enter First Name"> <br />
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Enter First Name"> <br /> <br />
+        <button type="Submit">Submit</button>
+        </form> <br> <br>
+        <form action="sumbit_form.php" method="POST" target="_blank">
+            <fieldset> <!--Groups codes together and shows it wit a visible box-->
+            <legend> Sign Up</legend> <!--The title for the fieldset-->
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="FirstName"> <br> <br>
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="LastName"> <br> <br>
+            <button type="Submit">Submit</button>
+            </fieldset>
+            <br> <br>
+        </form>
+        <form name="user-login-form" id="login-form" method="get">
+            <label for="username" >Username:</label> <br>
+            <input type="text" id="username" name="user"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="password" name="pwd"><br> <br>
+            <input type="submit" value="Submit">
+        </form>
+        <br><br>
+        <form>
+                <input type="radio" id="Bella" name="Bella" value="Bella">
+                <label for="bella">Bella</label><br>
+                <input type="radio" id="balle" name="Bella" value="Balle">
+                <label for="balle">Balle</label><br>
+                <input type="radio" id="bllae" name="Bella" value="Bllae">
+                <label for="bllae">Bllae</label><br>
+        </form>
+        <form>
+            <label for="username" >Username:</label> <br>
+            <input type="text" id="username" name="user"><br>
+            <label for="pwd">Password:</label><br>
+            <input type="password" id="password" name="pwd"><br> <br>
+            <input type="submit" value="Submit"><br> <br>
+        </form>
+        <form><fieldset form="name-suggestion" name="correct">
+            <legend> How do you spell my name? pick one</legend>
+            <input type="checkbox" name="Isa" id="Isa" value="Name"/>
+            <label for="Isa">Bella</label> <br>
+            <input type="checkbox" name="Isabella" id="Isabella" value="Name2"/>
+            <label for="Isabella">Isabella</label> <br>
+        </fieldset></form>
+
+        <form name="Favourite-subject" id="Favourite-subject" method="get">
+            <label for="Subjects">Choose your favourite subject:</label>
+            <select name="Subjects" id="Subjects">
+                <option value="Math">Math</option>
+                <option value="ELA">English</option>
+                <option value="Band">Band</option>
+            </select> <br /> <br />
+            <input type="Submit" value="Submit"><br> <br>
+        </form>
+        <form>
+        <fieldset>
+            <legend>How do you spell my name?</legend>
+            <input type="radio" id="Bella" name="Bella" value="Bella">
+            <label for="bella">Bella</label>
+            <input type="radio" id="balle" name="Bella" value="Balle">
+            <label for="balle">Balle</label>
+            <input type="radio" id="bllae" name="Bella" value="Bllae">
+            <label for="bllae">Bllae</label><br>
+            <button type="Submit">Submit</button>
+        </fieldset> <br /><br />
+    </form>
+    <label for="story">Tell me about yourself:</label> <br /> <br />
+    <textarea id="story" name="story" rows="5" cols="33"> </textarea>
+    <input type="Submit" value="Submit">
+    <br /><br />
+    <input type="text" value="John Doe">
+
+</body>
+</html>
