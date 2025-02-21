@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime</title>
+    <link href="https://fonts.google.com/share?selection.family=Maven+Pro:wght@400..900" rel="stylesheet">
+    <link href="https://fonts.google.com/share?selection.family=Manrope:wght@200..800|Maven+Pro:wght@400..900 " rel="stylesheet">
+    <style>
+        nav {
+            background-color: #eda64a;
+            overflow: hidden;
+        }
+        nav .nav-item {
+            float: left;
+            padding: 14px 20px;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            font-size: 18px;
+            cursor: default;
+        }
+        nav .nav-item:hover {
+            background-color: #cb8121;
+            color: rgb(137, 106, 59);
+        }
+        nav::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: center;  /* Centers the images horizontally */
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        img {
+            width: 17%;
+            height: 300px;
+            margin-top: 25px;
+            margin-bottom: 50px;
+            border: 4px solid #c09b6b;
+        }
+
+        img:not(#excluded) { 
+            margin-left: 5px;
+        }
+
+        h1{
+            font-size: 5em;
+        }
+        #excluded {
+            border-radius: 100%; 
+            width: 200px;
+            height: 250px;
+        }
+        .image-text-container {
+            display: flex;
+            align-items: center;  /* Vertically center the text and image */
+            margin-top: 20px;
+        }
+
+        .image-text-container p {
+            margin-left: 20px;  /* Adds space between the image and the text */
+            font-size: 120%;
+        }
+        form {
+            background-color: #edba6daf;
+            padding: 20px;
+            border-radius: 50px;
+            width: 46%;
+            height: auto;
+            box-shadow: 0 0 10px rgb(255, 172, 47);
+            float:right;
+            margin-left: 20px;
+
+        }
+        h2 {
+            text-align: center;
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+        label {
+            font-size: 1.2em;
+            display: block;
+            margin-bottom: 8px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        textarea {
+            height: 40px;
+            font-family: 'Maven Pro', sans-serif;
+        }
+        button {
+            background-color: #eda64a;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            cursor: pointer;
+            display: block;
+            margin: 0 auto;
+        }
+        button:hover {
+            background-color: #cb8121;
+        }
+
+</style>
+</head>
+<body style="background-color: rgb(247, 230, 210);">
+
+    <nav>
+        <div class="nav-item">Home</div>
+        <div class="nav-item">Recommended</div>
+        <div class="nav-item">More</div>
+    </nav>
+    <div class="image-gallery">
+    <img src="HTMLImages.html/Naruto.jpg" alt="Natuto Image"  style="margin-top: 25px;" >
+    <img src="HTMLImages.html/Attack on titan.jpg" alt="Attack On Titan Image" style="margin-top: 25px;">
+    <img src="HTMLImages.html/One Peice.jpg" alt="One Peice Image"  style="margin-top: 25px;">
+    <img src="HTMLImages.html/Tokyo Revengers.jpg" alt="Alchemist Image" style="margin-top: 25px;">
+    <img src="HTMLImages.html/Bleach.jpg" alt="Bleach Image"  style="margin-top: 25px;">
+    </div>
+    <h1 style="margin-top: -30px;" >What Is Anime?</h1>
+    <div class="image-text-container">
+        <img src="HTMLImages.html/Osamu Tezuka.jpeg" alt="Osamu Tezuka" id="excluded" style="margin-top: -25px;">
+        <p style="margin-top: -70px; font-size: 20px;">Anime is a style of animation that originated in Japan, known for its colorful artwork, imaginative worlds, and often complex plots. It covers a wide array of genres, catering to audiences of all ages, from children to adults, with themes ranging from action and fantasy to romance, horror, and slice-of-life. A key figure in shaping modern anime is Osamu Tezuka, often called the "God of Manga," whose work like Astro Boy laid the foundation for the animation and manga industry as we know it today. Tezuka's innovative storytelling and unique art style revolutionized Japanese animation, influencing not only future anime but also global animation trends. He also helped popularize the art of manga, which paved the way for the booming industry of graphic novels. Today, anime has grown into a global phenomenon, influencing pop culture worldwide and leading to massive fandoms, conventions, and adaptations in different media.</p>
+    </div>
+    <form action="submit_form.php" method="POST">
+        <h2 style="font-size: 20px;"><u>Tell Us About Your Favorite Anime!</u></h2>
+
+        <label for="anime-name">What is your favorite anime?</label>
+        <input type="text" id="anime-name" name="anime-name" required>
+
+        <label for="anime-feedback">Why do you love it?</label>
+        <textarea id="anime-feedback" name="anime-feedback" required></textarea>
+
+        <label for="questions">Do you have any questions for us?</label>
+        <textarea id="questions" name="questions"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+    <hr style="border: 3px solid #e1b780; margin-top: 30px; filter:blur(3px)">
+
+    <p style="font-size: 20px;">This is a site designed to give you a quick introduction to anime. Whether you're new to anime or just curious about what it is, we provide a clear and concise explanation of the genre, its origins, and what makes it so popular worldwide. Explore the basics and start your anime journey here!</p>
+    
+    <hr style="border: 3px solid #e1b780; margin-top: -10px; filter:blur(3px)">
+    <img src="HTMLImages.html/Goku.jpg" alt="Goku Image" style="width: 48%; height: 300px; margin-top: 25px; margin-left: 2px; border: 2px solid #c09b6b;">
+    <table border="1" cellspacing="0" style="width: 100%; margin: 20px auto; text-align: center;">
+        <caption><strong>Top 5 Most Popular Animes</strong></caption>
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Anime Title</th>
+                <th>Release Year</th>
+                <th>Genre</th>
+                <th>Episodes</th>
+                <th>Rating (IMDb)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Attack on Titan</td>
+                <td>2013</td>
+                <td>Action, Drama, Fantasy</td>
+                <td>87+ (Ongoing)</td>
+                <td>8.9/10</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>One Piece</td>
+                <td>1999</td>
+                <td>Action, Adventure, Fantasy</td>
+                <td>1070+ (Ongoing)</td>
+                <td>8.8/10</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Naruto Shippuden</td>
+                <td>2007</td>
+                <td>Action, Adventure, Martial Arts</td>
+                <td>500</td>
+                <td>8.6/10</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Dragon Ball Z</td>
+                <td>1989</td>
+                <td>Action, Adventure, Martial Arts</td>
+                <td>291</td>
+                <td>8.7/10</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Fullmetal Alchemist: Brotherhood</td>
+                <td>2009</td>
+                <td>Action, Adventure, Fantasy</td>
+                <td>64</td>
+                <td>9.1/10</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    
+    <footer>
+        <iframe src="https://www.youtube.com/embed/cGJPTMus_0c?si=U4oFfwWJrheoyvrr" title="Overpowered Anime Characters" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
+        <p>© 2025 Anime Gallery. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
